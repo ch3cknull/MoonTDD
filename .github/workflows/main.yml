@@ -16,7 +16,7 @@ jobs:
         uses: leafo/gh-actions-luarocks@v4
 
       - name: Install Busted
-        run: sudo luarocks install busted
+        run: luarocks install moonscript busted
 
       - name: Test
         run: busted
