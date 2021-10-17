@@ -11,9 +11,13 @@ jobs:
 
       - name: Deploy
         uses: leafo/gh-actions-lua@v8
+          with:
+            luaVersion: "5.3.0"
 
       - name: Install Luarocks
         uses: leafo/gh-actions-luarocks@v4
+          with:
+            luarocksVersion: "2.4.2"
 
       - name: Install Busted
         run: luarocks install moonscript busted
