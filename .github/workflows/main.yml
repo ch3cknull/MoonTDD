@@ -11,6 +11,8 @@ jobs:
 
       - name: Deploy
         uses: leafo/gh-actions-lua@v8
+
+      - name: Install Luarocks
         uses: leafo/gh-actions-luarocks@v4
 
       - name: Install Busted
@@ -21,4 +23,3 @@ jobs:
     steps:
       - name: Test
         run: busted
-      
