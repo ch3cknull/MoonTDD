@@ -1,3 +1,4 @@
 {
-  "Lua.diagnostics.globals": ["describe", "it"]
+  "Lua.diagnostics.globals": ["describe", "it"],
+  "terminal.integrated.defaultProfile.windows": "kali-linux (WSL)"
 }

@@ -1,0 +1,20 @@
+{
+  "name": "moonscript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "busted"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ch3cknull/MoonTDD.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ch3cknull/MoonTDD/issues"
+  },
+  "homepage": "https://github.com/ch3cknull/MoonTDD#readme"
+}

@@ -24,4 +24,12 @@ _M.includes = (arr, element) ->
     if (v == element) return true
   return false
 
+_M.concat = (a, b) ->
+  if not (type(a) == 'table' and type(b) == 'table')
+    error('TypeError: Need Tables')
+
+  for _, v in ipairs(b)
+    a[#a + 1] = v
+  return a
+
 return _M
