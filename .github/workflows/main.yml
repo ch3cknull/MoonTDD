@@ -17,9 +17,6 @@ jobs:
 
       - name: Install Busted
         run: sudo luarocks install busted
-  test:
-    name: Unit test
-    runs-on: ubuntu-latest
-    steps:
+
       - name: Test
         run: busted
