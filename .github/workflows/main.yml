@@ -1,0 +1,25 @@
+name: Unit Test
+on: push
+
+jobs:
+  install:
+    name: Install Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+
+      - name: Deploy
+        uses: leafo/gh-actions-lua@v8
+        uses: leafo/gh-actions-luarocks@v4
+
+      - name: Install Busted
+        runs: sudo luarocks install busted
+
+  test:
+    name: Unit test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test
+        run: busted
+      
